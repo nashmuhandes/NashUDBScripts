@@ -64,9 +64,9 @@ if (UDB.ScriptOptions.conversiondirection == 0)
 			t.type = TYPE_SPOTLIGHT_STATIC;
 
 			// if the color was defined as a string, convert it to an int so ZDRay can read it
-			if (t.fields['arg0str'] != null)
+			if (t.fields.arg0str != null)
 			{
-				let hexString = t.fields['arg0str'];
+				let hexString = t.fields.arg0str;
 				let rgb = parseInt('0x' + hexString);
 				t.args[0] = rgb;
 			}
@@ -74,7 +74,7 @@ if (UDB.ScriptOptions.conversiondirection == 0)
 
 		// write light intensity
 		// this doesn't exist on dynamic lights so just hardcode it to 1.0
-		t.fields['lightintensity'] = 1.0;
+		t.fields.lightintensity = 1.0;
 
 		convertedLightCount++;
 	});
@@ -100,10 +100,10 @@ else
 			t.type = TYPE_SPOTLIGHT_ATTENUATED;
 
 			// convert the int color to a hex string because UDB's color picker expects it
-			if (t.fields['arg0str'] == null)
+			if (t.fields.arg0str == null)
 			{
 				let hexString = t.args[0].toString(16).toUpperCase();
-				t.fields['arg0str'] = hexString;
+				t.fields.arg0str = hexString;
 			}
 		}
 
