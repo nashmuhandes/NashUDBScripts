@@ -72,10 +72,6 @@ if (UDB.ScriptOptions.conversiondirection == 0)
 			}
 		}
 
-		// write light intensity
-		// this doesn't exist on dynamic lights so just hardcode it to 1.0
-		t.fields.lightintensity = 1.0;
-
 		convertedLightCount++;
 	});
 
