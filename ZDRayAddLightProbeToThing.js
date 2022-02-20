@@ -2,7 +2,7 @@
 
 `#name ZDRay: Add light probe to thing`;
 
-`#description Adds a light probe to the selected things`;
+`#description Adds a light probe to the selected things. Written by Nash Muhandes`;
 
 const TYPE_LIGHT_PROBE = 9875;
 
