@@ -1,8 +1,8 @@
 `#version 4`;
 
-`#name ZDRay: Add light probe to thing`;
+`#name DISDAIN Demo: Add light probe to thing`;
 
-`#description Adds a light probe to the selected things. Written by Nash Muhandes`;
+`#description Adds a light probe to the selected things. Written by Nash Muhandes. NOTE: THIS IS ONLY MEANT TO BE USED WITH THE DISDAIN DEMO AND NOT THE FINAL VERSION OF THE GAME!`;
 
 const TYPE_LIGHT_PROBE = 9875;
 
